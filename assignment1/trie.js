@@ -52,7 +52,7 @@ class Trie {
           if (value[0][childOnlyKey]) {
 
             if (value[0][childOnlyKey].length === 1) {
-              // if only one element in a group we don't need group
+              // if only one element in a group we don't need the group
               res.push(...value[0][childOnlyKey])
             } else {
               res.push({ [Trie.addKeyPrefix(childOnlyKey, key)]: value[0][childOnlyKey] })

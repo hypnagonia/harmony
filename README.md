@@ -13,6 +13,8 @@ yarn start
 ````
 then hit http://localhost:3000
 
+[click to see proccessed JSON](https://github.com/hypnagonia/harmony/blob/master/assignment2/src/names.json)
+
 
 **Background:** We have too many objects to display in one list. We want to group them
 automatically into folders to provide a bird’s eye view / summary of the object names that are
