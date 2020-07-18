@@ -1,5 +1,7 @@
 # Harmony
 
+Used Node v14.5.0 and Yarn installed globally
+
 ## Assingment 1
 ````
 cd assingment1
@@ -9,6 +11,7 @@ node index.js
 ## Assingment 2
 ````
 cd assingment2
+yarn
 yarn start
 ````
 then hit http://localhost:3000
