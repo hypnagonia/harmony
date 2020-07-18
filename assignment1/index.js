@@ -23,7 +23,7 @@
 
   const json = JSON.stringify(trie.dumpPath())
 
-  //fs.writeFile('../assignment2/src/names.json', json, 'utf8', ()=>{});
+  fs.writeFile('../assignment2/src/names.json', json, 'utf8', ()=>{});
 
   console.log(json)
 })()

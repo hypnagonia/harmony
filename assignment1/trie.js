@@ -46,16 +46,17 @@ class Trie {
         // while traversing a tree. but did it for clarity
         const children = child.dumpPath(prefixedKey)
         const value = child.isWord ? [prefixedKey, ...children] : children
-        const childOnlyKey = Object.keys(value[0])
 
         if (value.length === 1) {
-          if (value[0][childOnlyKey]) {
+          const childOnlyKey = Object.keys(value[0])
+          const childValue = value[0][childOnlyKey]
 
-            if (value[0][childOnlyKey].length === 1) {
+          if (childValue) {
+            if (childValue.length === 1) {
               // if only one element in a group we don't need the group
-              res.push(...value[0][childOnlyKey])
+              res.push(...childValue)
             } else {
-              res.push({ [Trie.addKeyPrefix(childOnlyKey, key)]: value[0][childOnlyKey] })
+              res.push({ [Trie.addKeyPrefix(childOnlyKey, key)]: childValue })
             }
 
           } else {
